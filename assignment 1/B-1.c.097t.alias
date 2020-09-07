@@ -1,0 +1,112 @@
+
+;; Function AddTwo (AddTwo, funcdef_no=0, decl_uid=1911, cgraph_uid=1, symbol_order=0)
+
+Points-to analysis
+
+Constraints:
+
+ANYTHING = &ANYTHING
+ESCAPED = *ESCAPED
+ESCAPED = ESCAPED + UNKNOWN
+*ESCAPED = NONLOCAL
+NONLOCAL = &NONLOCAL
+NONLOCAL = &ESCAPED
+INTEGER = &ANYTHING
+a = &NONLOCAL
+a_2 = a + UNKNOWN
+a_2 = &NONLOCAL
+ESCAPED = a_2
+
+Collapsing static cycles and doing variable substitution
+Building predecessor graph
+Detecting pointer and location equivalences
+Rewriting constraints and unifying variables
+Uniting pointer but not location equivalent variables
+Finding indirect cycles
+Solving graph
+
+Points-to sets
+
+ANYTHING = { ANYTHING }
+ESCAPED = { ESCAPED NONLOCAL }
+NONLOCAL = { ESCAPED NONLOCAL }
+STOREDANYTHING = { }
+INTEGER = { ANYTHING }
+a = { NONLOCAL }
+a_2 = { NONLOCAL }
+
+
+Alias information for AddTwo
+
+Aliased symbols
+
+
+Call clobber information
+
+ESCAPED, points-to non-local, points-to vars: { }
+
+Flow-insensitive points-to information
+
+
+AddTwo (int a)
+{
+  <bb 2> [local count: 1073741824]:
+  a_2 = a_1(D) + 2;
+  return a_2;
+
+}
+
+
+
+;; Function main (main, funcdef_no=1, decl_uid=1913, cgraph_uid=2, symbol_order=1) (executed once)
+
+Points-to analysis
+
+Constraints:
+
+ANYTHING = &ANYTHING
+ESCAPED = *ESCAPED
+ESCAPED = ESCAPED + UNKNOWN
+*ESCAPED = NONLOCAL
+NONLOCAL = &NONLOCAL
+NONLOCAL = &ESCAPED
+INTEGER = &ANYTHING
+ESCAPED = &NONLOCAL
+
+Collapsing static cycles and doing variable substitution
+Building predecessor graph
+Detecting pointer and location equivalences
+Rewriting constraints and unifying variables
+Uniting pointer but not location equivalent variables
+Finding indirect cycles
+Solving graph
+
+Points-to sets
+
+ANYTHING = { ANYTHING }
+ESCAPED = { ESCAPED NONLOCAL }
+NONLOCAL = { ESCAPED NONLOCAL }
+STOREDANYTHING = { }
+INTEGER = { ANYTHING }
+
+
+Alias information for main
+
+Aliased symbols
+
+
+Call clobber information
+
+ESCAPED, points-to non-local, points-to vars: { }
+
+Flow-insensitive points-to information
+
+
+main ()
+{
+  <bb 2> [local count: 1073741824]:
+  return 5;
+
+}
+
+

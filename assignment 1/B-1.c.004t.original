@@ -1,0 +1,24 @@
+
+;; Function AddTwo (null)
+;; enabled by -tree-original
+
+
+{
+  a = a + 2;
+  return a;
+}
+
+
+;; Function main (null)
+;; enabled by -tree-original
+
+
+{
+  int x = 3;
+
+    int x = 3;
+  x = AddTwo (x);
+  return x;
+}
+return 0;
+

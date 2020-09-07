@@ -1,0 +1,58 @@
+
+;; Function main (main, funcdef_no=0, decl_uid=1911, cgraph_uid=1, symbol_order=1)
+
+;; 2 loops found
+;;
+;; Loop 0
+;;  header 0, latch 1
+;;  depth 0, outer -1
+;;  nodes: 0 1 2 3 4 5
+;;
+;; Loop 1
+;;  header 4, latch 3
+;;  depth 1, outer 0
+;;  nodes: 4 3
+;; 2 succs { 4 }
+;; 3 succs { 4 }
+;; 4 succs { 3 5 }
+;; 5 succs { 1 }
+Predictions for bb 2
+1 edges in bb 2 predicted to even probabilities
+Predictions for bb 3
+1 edges in bb 3 predicted to even probabilities
+Predictions for bb 4
+  first match heuristics: 80.00%
+  combined heuristics: 80.00%
+  opcode values nonequal (on trees) heuristics of edge 4->3 (ignored): 66.00%
+  loop iterations heuristics of edge 4->5: 20.00%
+Predictions for bb 5
+1 edges in bb 5 predicted to even probabilities
+main ()
+{
+  int a;
+  int i;
+  int N.0_1;
+
+  <bb 2> [local count: 214748364]:
+  goto <bb 4>; [100.00%]
+
+  <bb 3> [local count: 858993459]:
+  N.0_1 = N;
+  a_8 = N.0_1 + a_3;
+  i_9 = i_2 + 1;
+
+  <bb 4> [local count: 1073741824]:
+  # i_2 = PHI <0(2), i_9(3)>
+  # a_3 = PHI <10(2), a_8(3)>
+  if (i_2 != 4)
+    goto <bb 3>; [80.00%]
+  else
+    goto <bb 5>; [20.00%]
+
+  <bb 5> [local count: 214748365]:
+  # a_4 = PHI <a_3(4)>
+  return a_4;
+
+}
+
+

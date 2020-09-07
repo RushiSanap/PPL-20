@@ -1,0 +1,12 @@
+1)How many  times is the expression  (a + c) computed  in the original
+  code (as seen in the SSA pass)? What about after the FRE pass?
+  Ans:Twice,though the operand are in different orders.It is only computed once after the FRE 
+  pass
+
+2)Have  there been  any more  optimizations  after FRE?  How will  you check?
+Ans:We can check if there have been further optimisations by checking B-4.c.*.optimised,which is the final file after optimisation.It appears that redundant assignment have subsequently been eliminated.
+
+3)Why did  we have  to put a  "return b" in  this assignment?  What if
+"return b" is changed to "return 0"? Will it make any difference?
+Ans:WE have to put 'return b' in this assignment to check how the code will execute in the case not ending with 'return o'.In given program if we use 'return 0' instead of 'return b' compiler will return the value of b after computation of the complex expression and the program will end.
+

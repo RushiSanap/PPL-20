@@ -1,0 +1,4 @@
+ 1)In the file B-3.c, what values  can variable `a' take? Will the `if'
+   condition [a  < 4] ever  be true?  Inspect the file  B-3.c.*.vrp1 to
+   analyze the dump.
+   Ans:In the given c program 'a' can take the values from 4 to 100 but in for loop only 4 to   99 values of a can be executed.The condition [a<4]never true because the for loop starting from the 4 itself and if block always terminated at the satrting of the programm.

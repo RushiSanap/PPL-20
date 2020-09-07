@@ -1,0 +1,13 @@
+1)How have if-blocks  been translated into GIMPLE  statements? Can you
+ differentiate between conditional and unconditional gotos?
+  Ans:
+  If-blocks are translated into conditional gotos.The conditional gotos is used to transfer   control of the execution from one part of program to the other part in some conditional statement while in unconditional gotos the control of the execution transfer to the starting of the program(as takes place in for and while loop)
+
+2)Repeat  the  above compilation,  but  now  asking for  another  dump
+ that  of  the pass  "cfg".  View  this  pass  and say  whether  this
+ representation makes it easier to  read and understand GIMPLEs. Draw
+ the control-flow graph  of the program A-2.c on a  piece of paper by
+ looking at the CFG dump.
+ Ans:
+ Yes it makes bit easier to see the control flow in this representation,but slightly less       concise in terms of line.
+

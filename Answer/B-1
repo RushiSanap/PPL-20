@@ -1,0 +1,9 @@
+1)The body  of AddTwo(x)  seems to  be inlined into  the call  of main
+  rendering the function useless (nobody else is calling it). Then why
+  is the definition of AddTwo(x) still there all the way till the last
+  pass (B-1.c.*.optimized)?
+  Ans:It can't be discarded,because it may be called from the another translation unit.
+
+ 2)Is there any way to get rid of it?
+ Ans:Add the static keyword to the prototype to signify that its linking is inernal only.
+

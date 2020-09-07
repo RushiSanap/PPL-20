@@ -1,0 +1,41 @@
+33 ccp "Copies propagated" "main" 1
+33 ccp "Constants propagated" "main" 2
+33 ccp "Statements deleted" "main" 3
+38 fre "RPO blocks" "main" 4
+38 fre "RPO num values == 5" "main" 1
+38 fre "RPO blocks visited" "main" 6
+38 fre "RPO iterations == 15" "main" 1
+38 fre "RPO num lattice == 5" "main" 1
+38 fre "RPO max_rpo iterations == 0" "main" 1
+38 fre "RPO blocks executable" "main" 4
+38 fre "RPO block visited times == 1" "main" 2
+38 fre "RPO block visited times == 2" "main" 2
+38 fre "RPO num avail == 5" "main" 1
+39 evrp "Incremental SSA update" "main" 1
+51 release_ssa "SSA names released" "main" 2
+51 release_ssa "SSA name holes removed" "main" 2
+95 ccp "Copies propagated" "main" 1
+95 ccp "Statements deleted" "main" 1
+97 cunrolli "Incremental SSA update" "main" 1
+104 fre "RPO blocks" "main" 1
+104 fre "RPO num lattice == 12" "main" 1
+104 fre "RPO iterations == 10" "main" 1
+104 fre "RPO blocks visited" "main" 1
+104 fre "RPO max_rpo iterations == 0" "main" 1
+104 fre "RPO blocks executable" "main" 1
+104 fre "RPO block visited times == 1" "main" 1
+104 fre "RPO num avail == 5" "main" 1
+104 fre "RPO num values == 5" "main" 1
+104 fre "Eliminated" "main" 3
+135 pre "RPO blocks" "main" 1
+135 pre "RPO iterations == 10" "main" 1
+135 pre "compute_antic iterations == 2" "main" 1
+135 pre "RPO blocks visited" "main" 1
+135 pre "RPO num lattice == 5" "main" 1
+135 pre "RPO max_rpo iterations == 0" "main" 1
+135 pre "RPO blocks executable" "main" 1
+135 pre "RPO block visited times == 1" "main" 1
+135 pre "insert iterations == 1" "main" 1
+135 pre "RPO num avail == 5" "main" 1
+135 pre "RPO num values == 5" "main" 1
+269 combine "two-insn combine" "main" 3

@@ -1,0 +1,33 @@
+
+;; Function main (main, funcdef_no=0, decl_uid=1911, cgraph_uid=1, symbol_order=1) (executed once)
+
+Released 2 names, 25.00%, removed 2 holes
+main ()
+{
+  int a;
+  int i;
+  int N.0_1;
+
+  <bb 2> [local count: 214748364]:
+  goto <bb 4>; [100.00%]
+
+  <bb 3> [local count: 858993459]:
+  N.0_1 = N;
+  a_6 = N.0_1 + a_3;
+  i_7 = i_2 + 1;
+
+  <bb 4> [local count: 1073741824]:
+  # i_2 = PHI <0(2), i_7(3)>
+  # a_3 = PHI <10(2), a_6(3)>
+  if (i_2 != 4)
+    goto <bb 3>; [80.00%]
+  else
+    goto <bb 5>; [20.00%]
+
+  <bb 5> [local count: 214748365]:
+  # a_4 = PHI <a_3(4)>
+  return a_4;
+
+}
+
+

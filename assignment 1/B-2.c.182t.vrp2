@@ -1,0 +1,37 @@
+
+;; Function main (main, funcdef_no=0, decl_uid=1911, cgraph_uid=1, symbol_order=1) (executed once)
+
+;; 2 loops found
+;;
+;; Loop 0
+;;  header 0, latch 1
+;;  depth 0, outer -1
+;;  nodes: 0 1 2
+;; 2 succs { 1 }
+
+Value ranges after VRP:
+
+N.0_9: VARYING
+a_10: int [-2147483638, +INF]
+a_15: VARYING
+a_20: VARYING
+a_25: VARYING
+
+
+main ()
+{
+  int a;
+  int i;
+  int N.0_9;
+
+  <bb 2> [local count: 214748369]:
+  N.0_9 = N;
+  a_10 = N.0_9 + 10;
+  a_15 = N.0_9 + a_10;
+  a_20 = N.0_9 + a_15;
+  a_25 = N.0_9 + a_20;
+  return a_25;
+
+}
+
+

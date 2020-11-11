@@ -1,0 +1,39 @@
+main ()
+{
+  int D.1920;
+
+  {
+    int a[3];
+    int b[3];
+    int i;
+    int * p;
+
+    try
+      {
+        b[0] = 1;
+        b[1] = 2;
+        b[2] = 3;
+        i = 0;
+        goto <D.1917>;
+        <D.1916>:
+        _1 = b[i];
+        a[i] = _1;
+        i = i + 1;
+        <D.1917>:
+        if (i <= 2) goto <D.1916>; else goto <D.1918>;
+        <D.1918>:
+        p = &a;
+        _2 = p + 8;
+        *_2 = 5;
+      }
+    finally
+      {
+        a = {CLOBBER};
+        b = {CLOBBER};
+      }
+  }
+  D.1920 = 0;
+  return D.1920;
+}
+
+

@@ -1,0 +1,30 @@
+
+;; Function main (null)
+;; enabled by -tree-original
+
+
+{
+  int a;
+  int b;
+
+    int a;
+    int b;
+  a = 4;
+  goto <D.2318>;
+  <D.2317>:;
+  if (a <= 3)
+    {
+      b = b + 2;
+    }
+  else
+    {
+      b = b * 2;
+    }
+  a++ ;
+  <D.2318>:;
+  if (a <= 99) goto <D.2317>; else goto <D.2319>;
+  <D.2319>:;
+  printf ((const char * restrict) "%d%d", a, b);
+}
+return 0;
+

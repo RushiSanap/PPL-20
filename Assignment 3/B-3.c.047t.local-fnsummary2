@@ -1,0 +1,66 @@
+
+;; Function main (main, funcdef_no=0, decl_uid=2313, cgraph_uid=1, symbol_order=0)
+
+
+Analyzing function body size: main
+
+IPA function summary for main/0
+  global time:     22.000000
+  self size:       14
+  global size:     0
+  min size:       0
+  self stack:      0
+  global stack:    0
+    size:8.000000, time:9.000000
+    size:2.000000, time:0.000000,  executed if:(not inlined)
+  calls:
+    printf/1 function body not available
+      loop depth: 0 freq:1.00 size: 4 time: 13
+
+main ()
+{
+  int b;
+  int a;
+  int D.2324;
+  int _8;
+
+  <bb 2> :
+  a_4 = 4;
+  goto <bb 7>; [INV]
+
+  <bb 3> :
+  if (a_1 <= 3)
+    goto <bb 4>; [INV]
+  else
+    goto <bb 5>; [INV]
+
+  <bb 4> :
+  b_10 = b_3 + 2;
+  goto <bb 6>; [INV]
+
+  <bb 5> :
+  b_9 = b_3 * 2;
+
+  <bb 6> :
+  # b_2 = PHI <b_10(4), b_9(5)>
+  a_11 = a_1 + 1;
+
+  <bb 7> :
+  # a_1 = PHI <a_4(2), a_11(6)>
+  # b_3 = PHI <b_5(D)(2), b_2(6)>
+  if (a_1 <= 99)
+    goto <bb 3>; [INV]
+  else
+    goto <bb 8>; [INV]
+
+  <bb 8> :
+  printf ("%d%d", a_1, b_3);
+  _8 = 0;
+
+  <bb 9> :
+<L6>:
+  return _8;
+
+}
+
+

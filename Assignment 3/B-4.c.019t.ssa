@@ -1,0 +1,28 @@
+
+;; Function main (main, funcdef_no=0, decl_uid=1910, cgraph_uid=1, symbol_order=0)
+
+main ()
+{
+  int c;
+  int b;
+  int a;
+  int D.1916;
+  int _1;
+  int _2;
+  int _3;
+  int _8;
+
+  <bb 2> :
+  _1 = a_4(D) + c_5(D);
+  _2 = b_6(D) + _1;
+  _3 = c_5(D) + a_4(D);
+  b_7 = _2 * _3;
+  _8 = b_7;
+
+  <bb 3> :
+<L0>:
+  return _8;
+
+}
+
+

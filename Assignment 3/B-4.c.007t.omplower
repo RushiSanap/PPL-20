@@ -1,0 +1,24 @@
+
+;; Function main (main, funcdef_no=0, decl_uid=1910, cgraph_uid=1, symbol_order=0)
+
+main ()
+{
+  int D.1916;
+
+  {
+    int a;
+    int b;
+    int c;
+
+    _1 = a + c;
+    _2 = b + _1;
+    _3 = c + a;
+    b = _2 * _3;
+    D.1916 = b;
+    return D.1916;
+  }
+  D.1916 = 0;
+  return D.1916;
+}
+
+

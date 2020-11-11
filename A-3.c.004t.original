@@ -1,0 +1,37 @@
+
+;; Function main (null)
+;; enabled by -tree-original
+
+
+{
+  int sum = 0;
+  int i;
+  int j;
+
+    int sum = 0;
+    int i;
+    int j;
+  goto <D.1916>;
+  <D.1915>:;
+  sum = sum * 2;
+  <D.1916>:;
+  if (sum <= 99) goto <D.1915>; else goto <D.1917>;
+  <D.1917>:;
+  i = 0;
+  goto <D.1922>;
+  <D.1921>:;
+  j = 0;
+  goto <D.1919>;
+  <D.1918>:;
+  sum = i * j + sum;
+  j++ ;
+  <D.1919>:;
+  if (j <= 49) goto <D.1918>; else goto <D.1920>;
+  <D.1920>:;
+  i++ ;
+  <D.1922>:;
+  if (i <= 24) goto <D.1921>; else goto <D.1923>;
+  <D.1923>:;
+}
+return 0;
+

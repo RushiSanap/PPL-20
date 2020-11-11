@@ -1,0 +1,50 @@
+
+;; Function main (main, funcdef_no=0, decl_uid=1911, cgraph_uid=1, symbol_order=1)
+
+
+Analyzing function body size: main
+   fp_expression set
+
+IPA function summary for main/1 fp_expression
+  global time:     10.000000
+  self size:       11
+  global size:     0
+  min size:       0
+  self stack:      0
+  global stack:    0
+    size:9.000000, time:10.000000
+    size:2.000000, time:0.000000,  executed if:(not inlined)
+  calls:
+
+main ()
+{
+  double r;
+  int q;
+  int p;
+  int c;
+  int b;
+  int a;
+  int _1;
+  int _2;
+  int Z.0_3;
+  int _4;
+
+  <bb 2> :
+  p_5 = 6;
+  a_6 = 10;
+  b_7 = 20;
+  _1 = a_6 * b_7;
+  c_8 = _1 + 25;
+  p_9 = 6;
+  q_11 = Z;
+  r_12 = 3.45e+1;
+  _2 = (int) r_12;
+  Z = _2;
+  Z.0_3 = Z;
+  _4 = Z.0_3 + 1;
+  Z = _4;
+  return;
+
+}
+
+

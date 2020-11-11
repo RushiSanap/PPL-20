@@ -1,0 +1,25 @@
+main ()
+{
+  int a;
+  int b;
+  int c;
+  int p;
+  int q;
+  double r;
+
+  p = 6;
+  a = 10;
+  b = 20;
+  _1 = a * b;
+  c = _1 + 25;
+  p = 6;
+  q = Z;
+  r = 3.45e+1;
+  _2 = (int) r;
+  Z = _2;
+  Z.0_3 = Z;
+  _4 = Z.0_3 + 1;
+  Z = _4;
+}
+
+

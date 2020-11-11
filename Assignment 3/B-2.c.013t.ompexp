@@ -1,0 +1,35 @@
+
+;; Function main (main, funcdef_no=0, decl_uid=1911, cgraph_uid=1, symbol_order=1)
+
+main ()
+{
+  int a;
+  int i;
+  int D.1919;
+
+  <bb 2> :
+  a = 10;
+  i = 0;
+  goto <bb 4>; [INV]
+
+  <bb 3> :
+  N.0_1 = N;
+  a = a + N.0_1;
+  i = i + 1;
+
+  <bb 4> :
+  if (i <= 3)
+    goto <bb 3>; [INV]
+  else
+    goto <bb 5>; [INV]
+
+  <bb 5> :
+  D.1919 = a;
+
+  <bb 6> :
+<L3>:
+  return D.1919;
+
+}
+
+

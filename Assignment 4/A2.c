@@ -2,7 +2,5 @@
 
 int main()
 {
-	int i=5;
-	int j=2;
-	return 0;
+	printf("Hello World");
 }
